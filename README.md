@@ -1,4 +1,4 @@
-# TS TDD & Cleand Code
+# TS TDD & Clean Code
 
 
 The original concept, author and ideas by the next course:
