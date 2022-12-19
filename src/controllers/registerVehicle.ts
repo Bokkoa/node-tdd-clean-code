@@ -1,4 +1,5 @@
 import { HttpRequest, HttpResponse } from '../interfaces/httpInterface'
+import { MissingFormalParameterException } from '../errors/clientError'
 export class RegisterVehicle {
   handle (httpRequest: HttpRequest): HttpResponse {
     const requiredProperties = ['name', 'model', 'year', 'color']
@@ -7,7 +8,7 @@ export class RegisterVehicle {
       if (!httpRequest.body[prop]) {
         return {
           statusCode: 400,
-          body: new Error(`error in the ${prop}`)
+          body: new MissingFormalParameterException(prop)
         }
       }
     }
