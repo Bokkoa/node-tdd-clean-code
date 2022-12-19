@@ -1,7 +1,7 @@
-import { foodHelper } from '../helpers/foodHelper'
+import { FoodHelper } from '../helpers/foodHelper'
 export class Food {
   constructor (
-    private readonly food: foodHelper
+    private readonly food: FoodHelper
   ) {
   }
 
@@ -15,5 +15,9 @@ export class Food {
 
   getPrice (): number {
     return this.food.price
+  }
+
+  getInventory (): number {
+    return this.food.inventory
   }
 }
