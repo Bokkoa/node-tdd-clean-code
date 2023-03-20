@@ -5,7 +5,7 @@ export class RegisterVehicle {
     const requiredProperties = ['name', 'model', 'year', 'color']
 
     for (const prop of requiredProperties) {
-      if (!httpRequest.body[prop]) {
+      if (httpRequest.body[prop] === undefined || httpRequest.body[prop] == null) {
         return {
           statusCode: 400,
           body: new MissingFormalParameterException(prop)
