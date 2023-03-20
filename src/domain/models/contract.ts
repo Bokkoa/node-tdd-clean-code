@@ -1,4 +1,4 @@
-import { IContract } from '../interfaces/IContract'
+import { IContract } from '../../interfaces/IContract'
 
 export class Contract {
   constructor (public contract: IContract) {

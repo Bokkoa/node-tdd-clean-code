@@ -1,4 +1,4 @@
-import { Contract, ContractPrime } from '../models/contract'
+import { Contract, ContractPrime } from '../domain/models/contract'
 
 describe('class contractModel', () => {
   it('contract regular 12 month', () => {

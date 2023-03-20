@@ -1,4 +1,4 @@
-import { Food } from '../models/food'
+import { Food } from '../domain/models/food'
 import { FoodHelper } from '../helpers/foodHelper'
 
 describe('Classes foodModel', () => {

@@ -1,4 +1,4 @@
-import { Team } from '../models/team'
+import { Team } from '../domain/models/team'
 
 describe('Team class', () => {
   it('position', () => {

@@ -1,4 +1,4 @@
-import { VehicleHelper } from '../helpers/vehicleHelper'
+import { VehicleHelper } from '../../helpers/vehicleHelper'
 
 export class Vehicle {
   constructor (

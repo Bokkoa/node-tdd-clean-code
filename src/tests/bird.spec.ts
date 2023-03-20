@@ -1,4 +1,4 @@
-import { Bird, Eagle, Penguin } from '../models/bird'
+import { Bird, Eagle, Penguin } from '../domain/models/bird'
 
 describe('Fly bird', () => {
   test('Should fly', () => {
