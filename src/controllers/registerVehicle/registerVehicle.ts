@@ -17,11 +17,11 @@ export class RegisterVehicle implements Controller {
           return badRequest(new MissingFormalParameterException(prop))
         }
       }
-      const { name, model, year, color } = httpRequest.body
-      const vehicle = await this.addAccount.add({ name, model, year, color })
+      const { name, model, year, color, email, sale } = httpRequest.body
+      const vehicle = await this.addAccount.add({ name, model, year, color, email, sale })
       success(vehicle)
     } catch (err) {
-      serverError(err)
+      return serverError(err)
     }
   }
 }

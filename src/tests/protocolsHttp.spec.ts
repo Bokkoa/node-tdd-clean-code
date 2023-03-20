@@ -1,4 +1,4 @@
-import { UrlLogin } from '../utils/protocolsHttp'
+import { UrlLogin } from '../protocols/protocolsHttp'
 
 describe('Protocols http and queries', () => {
   test('Url login', () => {
